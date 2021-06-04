@@ -161,7 +161,7 @@
     .flex-wrap {
         flex-wrap: wrap;
     }
-    .size-max {
+    .size-min {
         width: 100%;
     }
     .menu-icon {
@@ -172,7 +172,11 @@
     } 
     .pop-up-menu {
         display: block;
-    }  
+    }
+    .icon-style:hover {
+        transform: scale(1);
+        filter: opacity(100%);
+    }      
      
 }
 
