@@ -8,9 +8,12 @@ ul:hover {
     color: rgb(2, 218, 200);
     transition: 0.5s;
 }
+a {
+    text-decoration: none;
+}
 h1 {
     font-size: 8rem;
-    color: rgb(2, 218, 200);
+    color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h2 {

@@ -18,8 +18,8 @@
     <nav>
         <div class = "menu">
             <div class="row space-between">
-                <div>
-                    <a href="#" class = "logo">DIEGO</a>
+                <div class="logo-container">
+                    <a href="#"><img src="./assets/Images/logo.png" alt=""></a>
                 </div>
                 <div class = "align-items relative">
                     <div class="visibility">
@@ -52,20 +52,20 @@
                 <h2>Or how to get headache.</h2>
             </div>
             <div class="container justify-content margin-top">
-                <i class="fas fa-angle-double-down icon-style"></i>
+                <a href="#about"><i class="fas fa-angle-double-down icon-style"></i></a>
             </div>
         </div>
     </section>
     
     <!-- Info -->
-    <section>
+    <section id="about">
         <div class = "container">
             <div class = "row margin flex-wrap">
                 <div class = "container2 size-max">
                     <img src="./assets/Images/20210525_145651.jpg" alt="Myself">
                 </div>
                 <div class = "container2 margin text-align size-max">
-                    <h2>Hi!</h2>
+                    <h2 class="margin-responsive">Hi!</h2>
                     <p class="margin">
                         This is my portfolio and this is my first project using HTML, CSS and a little bit of JavaScript for the menu. Here should be my experience which is zero so i'm just going to fill this space with some information about me.
                     </p>
@@ -92,7 +92,7 @@
     </section>
 
      <!-- Services -->
-    <section class = "background-image">
+    <section class = "background-image" id="services">
         <div class = "container">
             <h2 class ="text-align margin">Services</h2>
             <div class = "row flex-wrap">
@@ -147,10 +147,10 @@
     </section>
 
     <!-- Images -->
-    <section>
+    <section id="gallery">
         <div class = "container margin text-align">
             <h2>Some of my favorite bands.</h2>
-            <p>In the future this will be replaced with images and links to my projects.</p>
+            <p class="margin">In the future this will be replaced with images and links to my projects.</p>
         </div>
         <div class = "container">
             <div class = "row flex-wrap">
@@ -278,18 +278,17 @@
     <!-- Menu Bottom-->
     <section>
         <div class = "container margin">
-            <div>
-                <div  class = "text-align margin"> 
-                    <a href="#" class="logo">DIEGO</a>
+            <div class="justify-content margin">
+                <div class="logo-container">
+                    <a href="#"><img src="./assets/Images/logo.png" alt=""></a>
                 </div>
-                <div  class = "justify-content">
-                    <ul>Menu</ul>
-                    <ul>About</ul>
-                    <ul>Contact</ul>
-                    <ul>Services</ul>
-                    <ul>FAQ</ul>
-                    <ul>Privacy</ul>
-                </div>
+            </div>
+            <div  class = "justify-content">
+                <a href="#about"><ul>About</ul></a>
+                <a href="#services"><ul>Services</ul></a>
+                <a href="#gallery"><ul>Gallery</ul></a>
+                <ul>FAQ</ul>
+                <ul>Privacy</ul>
             </div>
         </div>
     </section>
