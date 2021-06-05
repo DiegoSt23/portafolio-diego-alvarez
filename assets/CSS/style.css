@@ -118,7 +118,7 @@
     visibility: collapse;
 }
 .hidden-menu {
-    display: none;
+    display: none;    
 }
 .pop-up-menu {
     display: none;
@@ -175,13 +175,15 @@
         visibility: collapse;
     } 
     .pop-up-menu {
-        display: block;
+        display: block;    
     }
     .icon-style:hover {
         transform: scale(1);
         filter: opacity(100%);
-    }      
-     
+    } 
+    button {
+        margin-top: 5px;
+    }         
 }
 
 
