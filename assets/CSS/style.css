@@ -193,13 +193,7 @@
     } 
     button {
         margin-top: 5px;
-    }   
-    .close-icon {
-        visibility: collapse;
-    }
-    .close-pop-up-menu {
-        visibility: visible;
-    }      
+    }     
 }
 
 
