@@ -36,7 +36,7 @@
     text-align: center;
 }
 .header-style{
-    padding-top: 300px;
+    padding-top: 320px;
     padding-bottom: 80px;
     width: 100%; 
     background-image: url(https://i.imgur.com/6PLXKp3.jpg);
@@ -108,7 +108,7 @@
     margin: auto;
 }
 .margin-top {
-    margin-top: 230px;
+    margin-top: 180px;
 }
 .margin-top2 {
     margin-top: 10px;
@@ -148,6 +148,7 @@
 @media screen and (max-width: 576px) {
     h1 {
         font-size: 4rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     span:hover {
         color: white;
