@@ -187,9 +187,6 @@
     .pop-up-menu {
         display: block;    
     }
-    .open-pop-up-menu {
-        visibility: collapse;
-    }
     .icon-style:hover {
         transform: scale(1);
         filter: opacity(100%);
