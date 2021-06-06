@@ -153,6 +153,7 @@
     span:hover {
         color: white;
         cursor: auto;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }    
     h2 {
         font-size: 1.5rem;
