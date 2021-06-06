@@ -12,9 +12,13 @@ a {
     text-decoration: none;
 }
 h1 {
-    font-size: 8rem;
+    font-size: 10rem;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+span:hover {
+    color: rgb(190, 189, 189);
+    cursor: pointer;
 }
 h2 {
     color: white;

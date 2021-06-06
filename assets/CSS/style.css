@@ -123,6 +123,10 @@
 .pop-up-menu {
     display: none;
 }
+.close-icon {
+    right: 25px;
+    visibility: collapse;
+}
 @media screen and (max-width: 992px) {
     .flex-wrap {
         flex-wrap: wrap;
@@ -139,13 +143,16 @@
     }
     h1 {
         font-size: 6rem;
-    }
-    
+    }    
 }
 @media screen and (max-width: 576px) {
     h1 {
         font-size: 4rem;
     }
+    span:hover {
+        color: white;
+        cursor: auto;
+    }    
     h2 {
         font-size: 1.5rem;
     }
@@ -177,13 +184,22 @@
     .pop-up-menu {
         display: block;    
     }
+    .open-pop-up-menu {
+        visibility: collapse;
+    }
     .icon-style:hover {
         transform: scale(1);
         filter: opacity(100%);
     } 
     button {
         margin-top: 5px;
-    }         
+    }   
+    .close-icon {
+        visibility: collapse;
+    }
+    .close-pop-up-menu {
+        visibility: visible;
+    }      
 }
 
 
