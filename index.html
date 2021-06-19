@@ -7,9 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Diego</title>
     <link rel="icon" href="./assets/Images/favicon.png" sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="./assets/CSS/grid.css">
-    <link rel="stylesheet" href="./assets/CSS/reset.css">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/dark-theme.css" id="theme">
     <script src="https://kit.fontawesome.com/c9fc359259.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
@@ -20,10 +18,10 @@
         <div class = "menu">
             <div class="row space-between">
                 <div class="logo-container">
-                    <a href="#"><img src="./assets/Images/logo.png" alt=""></a>
+                    <a href="#"><img src="./assets/Images/logo.png" alt="logo" id="logo"></a>
                 </div>
                 <div class = "align-items relative">
-                    <div class="visibility">
+                    <div class="visibility">                    
                         <button>Login</button>
                         <button>Sign Up</button>
                     </div>
@@ -98,37 +96,37 @@
             <div class = "row flex-wrap">
                 <div class = "column text-align size-min size-mid">
                     <h3>Skill 1</h3>
-                    <p class="margin">
+                    <p class="margin color">
                         The plan is to become a Full-Stack Developer in the future and fill this with my skills, right now i do not offer any sevice but hey, now i know how to use Flexbox right?.
                     </p>
                 </div>
                 <div class = "column text-align size-min size-mid">
                     <h3>Skill 2</h3>
-                    <p class="margin">
+                    <p class="margin color">
                         The plan is to become a Full-Stack Developer in the future and fill this with my skills, right now i do not offer any sevice but hey, now i know how to use Flexbox right?.
                     </p>
                 </div>
                 <div class = "column text-align size-min size-mid">
                     <h3>Skill 3</h3>
-                    <p class="margin">
+                    <p class="margin color">
                         The plan is to become a Full-Stack Developer in the future and fill this with my skills, right now i do not offer any sevice but hey, now i know how to use Flexbox right?.
                     </p>
                 </div>
                 <div class = "column text-align size-min size-mid">
                     <h3>Skill 4</h3>
-                    <p class="margin">
+                    <p class="margin color">
                         The plan is to become a Full-Stack Developer in the future and fill this with my skills, right now i do not offer any sevice but hey, now i know how to use Flexbox right?.
                     </p>
                 </div>
                 <div class = "column text-align size-min size-mid">
                     <h3>Skill 5</h3>
-                    <p class="margin">
+                    <p class="margin color">
                         The plan is to become a Full-Stack Developer in the future and fill this with my skills, right now i do not offer any sevice but hey, now i know how to use Flexbox right?.
                     </p>
                 </div>
                 <div class = "column text-align size-min size-mid">
                     <h3>Skill 6</h3>
-                    <p class="margin">
+                    <p class="margin color">
                         The plan is to become a Full-Stack Developer in the future and fill this with my skills, right now i do not offer any sevice but hey, now i know how to use Flexbox right?.
                     </p>
                 </div>
@@ -158,7 +156,7 @@
                     <a href="https://www.deftones.com/" target="_blank">
                         <div class = "relative picture">
                             <img src="./assets/Images/deftones-chinomoreno-1310x838.jpg" alt="Deftones">
-                            <div class="overlay absolute">
+                            <div class="overlay absolute">  
                                 Deftones                    
                             </div>
                         </div>
@@ -237,7 +235,7 @@
                 <div class = "column size-max">
                     <a href="https://www.animalsasleaders.org/" target="_blank">
                         <div class = "relative picture">
-                            <img src="./assets/Images/Animals-as-Leaders-30.jpg"   alt="Animals As Leaders">
+                            <img src="./assets/Images/Animals-as-Leaders-30.jpg" alt="Animals As Leaders">
                             <div class = "overlay absolute">
                                 Animals As Leaders
                             </div>
@@ -288,10 +286,15 @@
         <div class = "container margin">
             <div class="justify-content margin">
                 <div class="logo-container">
-                    <a href="#"><img src="./assets/Images/logo.png" alt=""></a>
-                </div>
+                    <a href="#"><img src="./assets/Images/logo.png" alt="logo" id="logo2"></a>
+                </div>    
             </div>
-            <div  class = "justify-content">
+            <div class="container row align-items justify-content margin">
+                <p>Dark Mode </p>
+                <i class="fas fa-toggle-on icon-style" id="dark-theme"></i>
+                <i class="fas fa-toggle-off icon-style" id="light-theme"></i>                
+            </div>
+            <div  class = "justify-content align-items">
                 <a href="#about"><ul>About</ul></a>
                 <a href="#services"><ul>Services</ul></a>
                 <a href="#gallery"><ul>Gallery</ul></a>
@@ -300,6 +303,8 @@
             </div>
         </div>
     </section>
+   
+    
     <script src= "./assets/JS/menu.js"></script>
 </body>
 </html>
