@@ -34,6 +34,33 @@ let switchSheet = () => {
 darkThemeChanger.addEventListener("click", switchSheet);
 lightThemeChanger.addEventListener("click", switchSheet);
 
+window.addEventListener('scroll', function()  {
+    let elements = document.getElementsByClassName('test');
+    let screenSize = window.innerHeight;
+    
+    for (var i = 0; i < elements.length; i++) {
+        let element = elements[i];
+  
+        if (element.getBoundingClientRect().top < screenSize) {
+            element.classList.add('visible');
+        } else {
+            element.classList.remove('visible');
+        }
+    }
+  });
+
+  let expandButton = document.getElementById("expandButton");
+
+  expandButton.addEventListener("click", function() {
+        let contactInfo = document.getElementById("contact-info");
+        
+        if (contactInfo.getAttribute("class") === "hidden") {
+            contactInfo.classList.remove("hidden")
+        } else {
+            contactInfo.classList.add("hidden")
+        }
+  })
+
 
 
 

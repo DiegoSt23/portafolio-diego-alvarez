@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 ul {
     color: rgb(139, 139, 139);
     margin: 0px 10px;
@@ -19,12 +22,18 @@ a {
 }
 h1 {
     font-size: 10rem;
-    color: indianred;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(88, 88, 88);
+    font-family: questrial;
 }
 span:hover {
-    color: rgb(163, 74, 74);
+    color: rgb(70, 69, 69);
     cursor: pointer;
+}
+.color-title {
+    color: indianred;
+}
+.color-title:hover {
+    color: rgb(180, 80, 80);
 }
 h2 {
     color: indianred;
@@ -178,7 +187,7 @@ h3 {
 }
 .separator {
   border-top: 1px solid indianred;
-  height: 3px;
+  height: 5px;
   width: 100%;
   padding: 0;
   margin: auto;
@@ -213,6 +222,28 @@ h3 {
 #light-theme {
     display: flex;
 }
+.fade-right {
+    opacity: 0;
+    transform: translate(10vh, 0vh);
+    transition: all 1s;
+  }
+.fade-left {
+    opacity: 0;
+    transform: translate(-10vh, 0vh);
+    transition: all 1s;
+}
+.fade-top {
+    opacity: 0; 
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
 
 @media screen and (max-width: 992px) {
     .flex-wrap {
@@ -239,7 +270,10 @@ h3 {
     span:hover {
         color: indianred;
         cursor: auto;
-    }    
+    }  
+    .color-title:hover {
+        color: indianred;
+    }  
     h2 {
         font-size: 1.5rem;
     }

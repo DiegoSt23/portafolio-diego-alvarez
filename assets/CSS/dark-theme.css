@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #0e0e0e;
 }
@@ -23,7 +26,13 @@ a {
 h1 {
     font-size: 10rem;
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: questrial;
+}
+.color-title {
+    color: rgb(2, 218, 200);
+}
+.color-title:hover {
+    color: rgb(13, 163, 151);
 }
 span:hover {
     color: rgb(190, 189, 189);
@@ -120,8 +129,8 @@ h3 {
     padding-top: 320px;
     padding-bottom: 80px;
     width: 100%; 
-    background-image: url(https://i.imgur.com/6PLXKp3.jpg);
-    background-attachment: fixed;   
+    /* background-image: url(https://i.imgur.com/6PLXKp3.jpg);
+    background-attachment: fixed;    */
 }
 .background-image {
     background-image: url(https://i.imgur.com/iH9web2.jpg);
@@ -214,6 +223,28 @@ h3 {
 #dark-theme {
     display: flex;
 }
+.fade-right {
+    opacity: 0;
+    transform: translate(10vh, 0vh);
+    transition: all 1s;
+  }
+.fade-left {
+    opacity: 0;
+    transform: translate(-10vh, 0vh);
+    transition: all 1s;
+}
+.fade-top {
+    opacity: 0; 
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
 @media screen and (max-width: 992px) {
     .flex-wrap {
         flex-wrap: wrap;
@@ -239,6 +270,9 @@ h3 {
     span:hover {
         color: white;
         cursor: auto;
+    }
+    .color-title:hover {
+        color: rgb(2, 218, 200);
     }    
     h2 {
         font-size: 1.5rem;
