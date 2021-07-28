@@ -175,6 +175,10 @@ h3 {
     transition: 0.3s;
     color: black;
 }
+.picture:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
 .icon-style {
     color: indianred;
@@ -202,6 +206,12 @@ h3 {
 }
 .container3 {
     width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.container4 {
+    width: 30%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -320,5 +330,8 @@ h3 {
     } 
     button {
         margin-top: 5px;
-    }     
+    }  
+    .container4 {
+        width: 40%;
+    }    
 }
