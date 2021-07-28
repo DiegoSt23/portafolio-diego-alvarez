@@ -176,6 +176,10 @@ h3 {
     transition: 0.3s;
     color: white;
 }
+.picture:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
 .icon-style {
     color: rgb(2, 218, 200);
