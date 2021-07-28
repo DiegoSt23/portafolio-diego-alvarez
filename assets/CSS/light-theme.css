@@ -26,7 +26,7 @@ h1 {
     font-family: questrial;
 }
 span:hover {
-    color: rgb(70, 69, 69);
+    color: rgb(63, 63, 63);
     cursor: pointer;
 }
 .color-title {
@@ -68,7 +68,7 @@ button {
     background-color: transparent;
     border: solid rgb(139, 139, 139) 1px;
     padding: 5px 15px;
-    
+    margin-left: 10px;
 }
 button:hover {
     color: black;
@@ -139,7 +139,7 @@ h3 {
     color: black;
 }
 .container {
-    width: 83.333%;
+    width: 75%;
     margin: auto;      
 } 
 .row {
@@ -147,6 +147,10 @@ h3 {
 }
 .column {
     width: 33.333%;
+}
+.column2 {
+    width: 45%;
+    margin: auto;
 }
 .absolute {
     position: absolute;
@@ -196,6 +200,12 @@ h3 {
     width: 50%;
     margin: auto;
 }
+.container3 {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
 .margin-top {
     margin-top: 180px;
 }
@@ -203,7 +213,7 @@ h3 {
     margin-top: 10px;
 }
 .menu-icon {
-    left: 80%;
+    left: 90%;
     visibility: collapse;
 }
 .hidden-menu {
@@ -222,15 +232,11 @@ h3 {
 #light-theme {
     display: flex;
 }
-.fade-right {
-    opacity: 0;
-    transform: translate(10vh, 0vh);
-    transition: all 1s;
-  }
-.fade-left {
-    opacity: 0;
-    transform: translate(-10vh, 0vh);
-    transition: all 1s;
+#dark-theme2 {
+    display: none;
+}
+#light-theme2 {
+    display: flex;
 }
 .fade-top {
     opacity: 0; 
@@ -268,7 +274,7 @@ h3 {
         font-size: 3.5rem;
     }
     span:hover {
-        color: indianred;
+        color: rgb(88, 88, 88);
         cursor: auto;
     }  
     .color-title:hover {

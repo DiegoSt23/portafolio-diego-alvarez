@@ -14,6 +14,8 @@ responsiveMenuIcon.addEventListener("click", function(){
 
 let darkThemeChanger = document.getElementById("dark-theme");
 let lightThemeChanger = document.getElementById("light-theme");
+let darkThemeChanger2 = document.getElementById("dark-theme2");
+let lightThemeChanger2 = document.getElementById("light-theme2");
 let theme = document.getElementById("theme");
 let logo = document.getElementById("logo");
 let logo2 = document.getElementById("logo2");
@@ -33,6 +35,8 @@ let switchSheet = () => {
 
 darkThemeChanger.addEventListener("click", switchSheet);
 lightThemeChanger.addEventListener("click", switchSheet);
+darkThemeChanger2.addEventListener("click", switchSheet);
+lightThemeChanger2.addEventListener("click", switchSheet);
 
 window.addEventListener('scroll', function()  {
     let elements = document.getElementsByClassName('test');
@@ -42,24 +46,26 @@ window.addEventListener('scroll', function()  {
         let element = elements[i];
   
         if (element.getBoundingClientRect().top < screenSize) {
-            element.classList.add('visible');
+            element.classList.add("visible");
         } else {
-            element.classList.remove('visible');
+            element.classList.remove("visible");
         }
     }
-  });
+});
 
-  let expandButton = document.getElementById("expandButton");
+let expandButton = document.getElementById("expandButton");
 
-  expandButton.addEventListener("click", function() {
-        let contactInfo = document.getElementById("contact-info");
-        
-        if (contactInfo.getAttribute("class") === "hidden") {
-            contactInfo.classList.remove("hidden")
-        } else {
-            contactInfo.classList.add("hidden")
-        }
-  })
+let switchButtons = () => {
+    let contactInfo = document.getElementById("contact-info");
+
+    if (contactInfo.getAttribute("class") === "hidden") {
+        contactInfo.classList.remove("hidden")
+    } else {
+        contactInfo.classList.add("hidden")
+    }
+};
+
+expandButton.addEventListener("click", switchButtons);
 
 
 
