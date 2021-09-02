@@ -7,6 +7,10 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    background-color: white;
+    transition: all 0.5s ease;
+}
 ul {
     color: rgb(139, 139, 139);
     margin: 0px 10px;
