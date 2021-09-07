@@ -110,6 +110,7 @@ h3 {
     position: fixed; 
     z-index: 1;
     width: 100%;
+    transition: all 0.5s ease;
 }
 .space-between {
     display: flex;
